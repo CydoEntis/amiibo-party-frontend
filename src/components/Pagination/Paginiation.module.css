@@ -1,0 +1,98 @@
+.pagination--wrapper { 
+	margin: .5rem 0;
+	position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+	z-index: 90;
+}
+
+.pagination {
+	margin: 0 auto;
+}
+
+.pages {
+	height: 100%;
+	width: 100%;
+	max-width: 400px;
+	margin: 0 auto;
+	display: flex;
+}
+
+.page--item {
+	background: #FFF;
+	width: 50px;
+	height: 40px;
+	border-radius: .4rem;
+	margin: 0 .5rem;
+	transition: hover ease-in-out 300ms;
+	cursor: pointer;
+	list-style: none;
+	background: #12c7b7;
+	box-shadow: 0px 7px 0px #00957b;
+}
+
+.page--item:hover {
+	filter: brightness(95%);
+	box-shadow: 0px 5px 0px #249ca8;
+	transform: translateY(2px);
+}
+
+.page--link {
+	background: transparent;
+	border: none;
+	font-size: 1.25rem;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	border-radius: .4rem;
+	color: #fff;
+}
+
+.page--item-primary,
+.page--link-primary {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #4cd8e6;
+	color: #fff;
+	font-size: 1.75rem;
+}
+
+.page--prev,
+.page--next {
+	background: #12c7b7;
+}
+
+.page--prev button,
+.page--next button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.active {
+	background: #0e9b90;
+	box-shadow: 0px 5px 0px #016b59;
+	transform: translateY(2px);
+}
+
+@media only screen and (min-width: 1440px) {
+	.page--item {
+		width: 100px;
+		height: 55px;
+	}
+
+	.pages {
+		max-width: 600px;
+	}
+
+	.page--link {
+		font-size: 1.75rem;
+	}
+}

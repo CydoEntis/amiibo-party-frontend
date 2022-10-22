@@ -1,0 +1,18 @@
+.amiibo--list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 600px) {
+  .amiibo--list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

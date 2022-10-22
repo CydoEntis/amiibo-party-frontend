@@ -1,0 +1,7 @@
+.card {
+  border-radius: .4rem;
+  background-color: #FFF;
+  border: 1px solid #dfdfdf;
+  margin: 10rem auto;
+  padding: .85rem;
+}

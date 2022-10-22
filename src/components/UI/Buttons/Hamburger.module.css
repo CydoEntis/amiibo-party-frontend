@@ -1,0 +1,25 @@
+.nav--open {
+  padding: 0.75rem;
+  font-size: 1.5rem;
+  color: #fff;
+  z-index: 98;
+  border-radius: .4rem;
+  background: #707070;
+  box-shadow: 0px 5px 0px #3e3e3e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem;
+}
+
+.is-active {
+	display: none;
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+  .nav--open{ 
+    display: none;
+  }
+}

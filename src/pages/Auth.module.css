@@ -1,0 +1,5 @@
+.main {
+  height: calc(100vh - 136px);
+  overflow: hidden;
+  padding-top: 5rem;
+}

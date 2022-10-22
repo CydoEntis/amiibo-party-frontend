@@ -1,0 +1,158 @@
+.mobile-nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	/* left: 0; */
+	/* background: white; */
+	background: url('https://external-preview.redd.it/FvWw8abLQYxU9ZiQYffjk9cAWhNZGBqL7YcIFY99xS8.png?auto=webp&s=1402b1e236cdbf552608f9e474a53b2396549244');
+	color: #333;
+	overflow-y: hidden;
+	animation: slideOut 350ms linear;
+	left: 100%;
+}
+
+.mobile--logo {
+	margin: 75px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo--large {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 275px;
+	height: 50px;
+	font-size: 2rem;
+}
+
+.is-active {
+	animation: slideIn 350ms linear;
+	left: 0;
+}
+
+.mobile-nav ul {
+	height: 100vh;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	list-style: none;
+}
+
+.mobile-nav ul li {
+	width: 200px;
+	margin: 0.5rem auto;
+	border-radius: 0.4rem;
+}
+
+/* .mobile-nav ul li:last-of-type {
+	margin: 100px auto;
+	background: #fa603f;
+	box-shadow: 0px 5px 0px #d5492b;
+} */
+
+.mobile-nav ul li a {
+	display: block;
+	margin: 0 auto;
+	border: none;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	text-decoration: none;
+	padding: 0.75rem;
+	border-radius: 0.4rem;
+	font-size: 1.15rem;
+}
+
+.btn {
+	width: 200px;
+	padding: 0.75rem;
+	border-radius: 0.4rem;
+	color: white;
+	font-size: 1.15rem;
+}
+
+.btn--nav {
+	background: #12c7b7;
+	box-shadow: 0px 7px 0px #00957b;
+}
+
+.btn--action {
+	background: #51b848;
+	box-shadow: 0px 7px 0px #398233;
+}
+
+.btn--action-active {
+	transform: translateY(2px);
+	filter: brightness(85%);
+	box-shadow: 0px 5px 0px #398233;
+}
+
+.btn--logout {
+	color: #fff;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	padding: 0.75rem;
+	background: #fa603f;
+	box-shadow: 0px 5px 0px #d5492b;
+	font-size: 1.35rem;
+	border-radius: 0.4rem;
+}
+
+.mobile-nav ul li a:hover,
+.btn--logout:hover {
+	filter: brightness(85%);
+}
+
+.active {
+	background: #0e9b90;
+	box-shadow: 0px 5px 0px #016b59;
+	transform: translate(2px);
+}
+
+.nav--close {
+	position: absolute;
+	top: 0.5rem;
+	right: 0.25rem;
+	padding: 0.75rem;
+	background: #fa603f;
+	box-shadow: 0px 5px 0px #d5492b;
+	font-size: 1.35rem;
+	color: #fff;
+	margin: 0 0.5rem;
+	z-index: 98;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@keyframes slideIn {
+	0% {
+		left: 100%;
+	}
+	100% {
+		left: 0;
+	}
+}
+
+@keyframes slideOut {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: 100%;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.mobile-nav {
+		display: none;
+	}
+}
