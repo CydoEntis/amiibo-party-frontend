@@ -42,7 +42,7 @@ const Amiibos = () => {
 	);
 
 	return (
-		<div className={classes.wrapper}onClick={closeDropdown}>
+		<div className="wrapper" onClick={closeDropdown}>
 			<AmiiboDetail />
 			<Navbar />
 			<MainWrapper>
