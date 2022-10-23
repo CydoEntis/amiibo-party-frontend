@@ -18,7 +18,7 @@ const initialState = {
 };
 
 const AuthForm = () => {
-	const { isLoading, showAlert, displayAlert, user, userAuth } =
+	const { showAlert, displayAlert, user, userAuth } =
 		useAppContext();
 	const [values, setValues] = useState(initialState);
 	const navigate = useNavigate();
@@ -50,8 +50,6 @@ const AuthForm = () => {
 		};
 
 		if (values.isMember) {
-
-			console.log(currentUser);
 
 			userAuth({
 				currentUser,

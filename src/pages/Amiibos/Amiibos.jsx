@@ -10,6 +10,8 @@ import { useAppContext } from '../../context/appContext';
 import AmiiboDetail from '../../components/Amiibo/AmiiboDetails/AmiiboDetail/AmiiboDetail';
 import AmiiboForm from '../../components/Forms/AmiiboForm';
 
+import classes from "./Amiibos.module.css";
+
 const Amiibos = () => {
 	const {
 		isLoading,
@@ -40,7 +42,7 @@ const Amiibos = () => {
 	);
 
 	return (
-		<div onClick={closeDropdown}>
+		<div className={classes.wrapper}onClick={closeDropdown}>
 			<AmiiboDetail />
 			<Navbar />
 			<MainWrapper>
