@@ -47,8 +47,8 @@ const Amiibos = () => {
 			<Navbar />
 			<MainWrapper>
 				<AmiiboForm />
-				{isLoading && <Loading />}
-				{!isLoading && (
+				{isLoading && modifiedAmiibos.length === 0 && <Loading />}
+				{!isLoading  && (
 					<>
 						<AmiiboList currentAmiibos={currentAmiibos} />
 						{numOfPages > 1 && <Pagination />}
