@@ -374,8 +374,6 @@ const AppProvider = ({ children }) => {
 			}
 		}
 
-		console.log(updatedList);
-
 		dispatch({ type: UPDATE_AMIIBO_LIST, payload: { updatedList } });
 	};
 
