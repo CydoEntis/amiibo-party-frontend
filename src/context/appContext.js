@@ -166,7 +166,7 @@ const AppProvider = ({ children }) => {
 		dispatch({ type: USER_AUTH_BEGIN });
 		try {
 			const { data } = await axios.post(
-				process.env.REACT_APP_TEST + `auth/${endPoint}`,
+				process.env.REACT_APP_API_ENDPOINT + `auth/${endPoint}`,
 				currentUser
 			);
 			
@@ -344,7 +344,7 @@ const AppProvider = ({ children }) => {
 
 	const saveAmiibo = async (amiiboData) => {
 		try {
-			await axios.post(process.env.REACT_APP_TEST + 'amiibos/save', amiiboData);
+			await axios.post(process.env.REACT_APP_API_ENDPOINT + 'amiibos/save', amiiboData);
 		} catch (error) {
 			console.log(error);
 		}
@@ -352,7 +352,7 @@ const AppProvider = ({ children }) => {
 
 	const updateAmiibo = async (amiiboData) => {
 		try {
-			await axios.post(process.env.REACT_APP_TEST + 'amiibos/update', amiiboData);
+			await axios.post(process.env.REACT_APP_API_ENDPOINT + 'amiibos/update', amiiboData);
 
 			const amiibo = state.amiiboList.find(
 				(amiibo) => amiibo.amiiboId === amiiboData.amiiboId
@@ -384,7 +384,7 @@ const AppProvider = ({ children }) => {
 			type: GET_AMIIBOS_LOADING,
 		});
 
-		let endpoint = process.env.REACT_APP_TEST + 'amiibos/';
+		let endpoint = process.env.REACT_APP_API_ENDPOINT + 'amiibos/';
 
 		if (collection === 'all') {
 			endpoint += 'all';
