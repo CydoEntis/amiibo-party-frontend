@@ -12,7 +12,7 @@ In came Amiibo Party! The one stop shop to keep track of everything Amiibo.
 
 As a college student I was looking for ways to get better at programming and this was just the project idea I needed. It solved a real world problem and let me put my web developer skills to the test.
 
-### The Tools!
+### The Tools
 
 <p align="left" style="display: block">
 <img align="left" alt="JavaScript" width="30px" style="padding-right:10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
@@ -23,6 +23,8 @@ As a college student I was looking for ways to get better at programming and thi
 <img align="left" alt="Node" width="30px" style="padding-right:10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
 <img align="left" alt="Mongo DB" width="30px" style="padding-right:10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
 </p>
+
+------------
 
 <p align="left" style="display: block">
 <img width="650" src="./src/assets/images/amiibo-list.png" alt="amiibo dashbaord">
