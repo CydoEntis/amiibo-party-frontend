@@ -14,6 +14,7 @@ As a college student I was looking for ways to get better at programming and thi
 
 ### The Tools!
 
+<p align="left">
 <img align="left" alt="JavaScript" width="30px" style="padding-right:10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
 <img align="left" alt="HTML5" width="30px" style="padding-right:10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
 <img align="left" alt="CSS3" width="30px" style="padding-right:10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
@@ -21,12 +22,13 @@ As a college student I was looking for ways to get better at programming and thi
 <img align="left" alt="Express" width="30px" style="padding-right:10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
 <img align="left" alt="Node" width="30px" style="padding-right:10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
 <img align="left" alt="Mongo DB" width="30px" style="padding-right:10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+</p>
 
-<br /> 
-## Screenshots!
+
+### Screenshots!
 
 <p align="left">
-<img width="350" src="./src/assets/images/amiibo-list.png" alt="amiibo dashbaord">
-<img width="350" src="./src/assets/images/amiibo-view.png" alt="amiibo view">
-<img width="350" src="./src/assets/images/collection-list.png" alt="collection dashboard">
+<img width="500" src="./src/assets/images/amiibo-list.png" alt="amiibo dashbaord">
+<img width="500" src="./src/assets/images/amiibo-view.png" alt="amiibo view">
+<img width="500" src="./src/assets/images/collection-list.png" alt="collection dashboard">
 </p>
