@@ -18,9 +18,8 @@ As a college student I was looking for ways to get better at programming and thi
 <img align="left" alt="Node" width="30px" style="padding-right:10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
 <img align="left" alt="Mongo DB" width="30px" style="padding-right:10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
 
+## Screenshots!
 
-## Screenshots
-
-![Amiibo Party Dashboard](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-![Amiibo Party Amiibo View](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-![Amiibo Party Collection](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![Amiibo Party Dashboard]([https://via.placeholder.com/468x300?text=App+Screenshot+Here](https://github.com/CydoEntis/amiibo-party-frontend/blob/main/src/assets/images/amiibo-list.png?raw=true))
+![Amiibo Party Amiibo View]([https://via.placeholder.com/468x300?text=App+Screenshot+Here](https://github.com/CydoEntis/amiibo-party-frontend/blob/main/src/assets/images/amiibo-view.png?raw=true))
+![Amiibo Party Collection]([https://via.placeholder.com/468x300?text=App+Screenshot+Here](https://github.com/CydoEntis/amiibo-party-frontend/blob/main/src/assets/images/collection-list.png?raw=true))
