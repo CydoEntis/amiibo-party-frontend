@@ -26,7 +26,8 @@ As a college student I was looking for ways to get better at programming and thi
 <br>
 <br>
 <br>
-------------
+
+### Screenshots
 
 <p align="left" style="display: block">
 <img width="650" src="./src/assets/images/amiibo-list.png" alt="amiibo dashbaord">
