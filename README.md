@@ -23,7 +23,9 @@ As a college student I was looking for ways to get better at programming and thi
 <img align="left" alt="Node" width="30px" style="padding-right:10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
 <img align="left" alt="Mongo DB" width="30px" style="padding-right:10px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
 </p>
-
+<br>
+<br>
+<br>
 ------------
 
 <p align="left" style="display: block">
