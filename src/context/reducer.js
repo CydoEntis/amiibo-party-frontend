@@ -26,8 +26,8 @@ import {
 	UPDATE_COLLECTION,
 	FOUND_AMIIBO_SUCCESS,
 	SET_FILTER,
-	TOGGLE_FILTER
-} from './actions';
+	TOGGLE_FILTER,
+} from "./actions";
 
 const reducer = (state, action) => {
 	switch (action.type) {
@@ -35,15 +35,15 @@ const reducer = (state, action) => {
 			return {
 				...state,
 				showAlert: true,
-				alertType: 'danger',
-				alertText: 'Please provide all values',
+				alertType: "danger",
+				alertText: "Please provide all values",
 			};
 		case CLEAR_ALERT:
 			return {
 				...state,
 				showAlert: false,
-				alertType: '',
-				alertText: '',
+				alertType: "",
+				alertText: "",
 			};
 		case USER_AUTH_BEGIN:
 			return { ...state, isLoading: true };
@@ -54,7 +54,7 @@ const reducer = (state, action) => {
 				user: action.payload.user,
 				token: action.payload.token,
 				showAlert: true,
-				alertType: 'success',
+				alertType: "success",
 				alertText: action.payload.alertText,
 			};
 		case USER_AUTH_ERROR:
@@ -62,7 +62,7 @@ const reducer = (state, action) => {
 				...state,
 				isLoading: false,
 				showAlert: true,
-				alertType: 'danger',
+				alertType: "danger",
 				alertText: action.payload.msg,
 			};
 		case LOGOUT_USER:
@@ -155,7 +155,7 @@ const reducer = (state, action) => {
 		case UPDATE_AMIIBO_LIST:
 			return {
 				...state,
-				modifiedList: action.payload.updatedList,
+				modifiedAmiibos: action.payload.updatedList,
 			};
 		case FIND_AMIIBO:
 			return {
@@ -182,32 +182,31 @@ const reducer = (state, action) => {
 				...state,
 				collectionType: action.payload.collection,
 				activeCollection: action.payload.activeCollection,
-
-			}
+			};
 		case UPDATE_COLLECTION:
 			return {
 				...state,
 				collectionData: action.payload.updatedCollections,
 				activeCollection: action.payload.collection,
-				sortData: action.payload.sortData
-			}
-		case FOUND_AMIIBO_SUCCESS: 
-		return {
-			...state,
-			modifiedAmiibos: action.payload.amiibos,
-			numOfPages: action.payload.numOfPages,
-			pageNumbers: action.payload.pageNumbers,
-		}
+				sortData: action.payload.sortData,
+			};
+		case FOUND_AMIIBO_SUCCESS:
+			return {
+				...state,
+				modifiedAmiibos: action.payload.amiibos,
+				numOfPages: action.payload.numOfPages,
+				pageNumbers: action.payload.pageNumbers,
+			};
 		case SET_FILTER:
 			return {
 				...state,
 				filterType: action.payload.filterType,
-			}
+			};
 		case TOGGLE_FILTER:
-				return {
-					...state,
-					filterIsOpen: action.payload.filterIsOpen
-				}
+			return {
+				...state,
+				filterIsOpen: action.payload.filterIsOpen,
+			};
 		default:
 			throw new Error(`no such action : ${action.type}`);
 	}

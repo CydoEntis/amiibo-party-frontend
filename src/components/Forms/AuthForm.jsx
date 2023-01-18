@@ -1,25 +1,24 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import Button from '../UI/Buttons/Button';
-import Card from '../UI/Cards/Card';
-import FormRow from './FormRow';
+import React from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import Button from "../UI/Buttons/Button";
+import Card from "../UI/Cards/Card";
+import FormRow from "./FormRow";
 
-import classes from './AuthForm.module.css';
-import Logo from '../Logo/Logo';
-import { useAppContext } from '../../context/appContext.js';
-import Alert from '../Alerts/Alert';
+import classes from "./AuthForm.module.css";
+import Logo from "../Logo/Logo";
+import { useAppContext } from "../../context/appContext.js";
+import Alert from "../Alerts/Alert";
 
 const initialState = {
-	username: '',
-	email: '',
-	password: '',
+	username: "",
+	email: "",
+	password: "",
 	isMember: true,
 };
 
 const AuthForm = () => {
-	const { showAlert, displayAlert, user, userAuth } =
-		useAppContext();
+	const { showAlert, displayAlert, user, userAuth } = useAppContext();
 	const [values, setValues] = useState(initialState);
 	const navigate = useNavigate();
 
@@ -39,6 +38,7 @@ const AuthForm = () => {
 		e.preventDefault();
 		const { username, email, password } = values;
 		if (!email || !password) {
+			console.log("error");
 			displayAlert();
 			return;
 		}
@@ -50,17 +50,16 @@ const AuthForm = () => {
 		};
 
 		if (values.isMember) {
-
 			userAuth({
 				currentUser,
-				endPoint: 'login',
-				alertText: 'Login Successful! Redirecting...',
+				endPoint: "login",
+				alertText: "Login Successful! Redirecting...",
 			});
 		} else {
 			userAuth({
 				currentUser,
-				endPoint: 'register',
-				alertText: 'User created! Redirecting...',
+				endPoint: "register",
+				alertText: "User created! Redirecting...",
 			});
 		}
 	};
@@ -68,55 +67,56 @@ const AuthForm = () => {
 	useEffect(() => {
 		setTimeout(() => {
 			if (user) {
-				navigate('/amiibos');
+				navigate("/amiibos");
 			}
 		}, 3000);
 	}, [user, navigate]);
 
-	const btnText = values.isMember ? 'Login' : 'Sign Up';
+	const btnText = values.isMember ? "Login" : "Sign Up";
 
-	const loginClasses = `${classes.btn} ${classes['btn--login']}`;
-	const registerClasses = `${classes.btn} ${classes['btn--register']}`;
+	const loginClasses = `${classes.btn} ${classes["btn--login"]}`;
+	const registerClasses = `${classes.btn} ${classes["btn--register"]}`;
 
 	return (
-		<Card className={classes['auth-card']}>
+		<Card className={classes["auth-card"]}>
 			<Logo className={classes.logo} />
 			<form onSubmit={submitHandler}>
 				{showAlert && <Alert />}
 				<FormRow
-					name='email'
-					type='email'
-					placeholder='Email'
+					name="email"
+					type="email"
+					placeholder="Email"
 					onChange={onChangeHandler}
 				/>
 				{!values.isMember && (
 					<FormRow
-						name='username'
-						type='text'
-						placeholder='Username'
+						name="username"
+						type="text"
+						placeholder="Username"
 						onChange={onChangeHandler}
 					/>
 				)}
 				<FormRow
-					name='password'
-					type='password'
-					placeholder='Password'
+					name="password"
+					type="password"
+					placeholder="Password"
 					onChange={onChangeHandler}
 				/>
-				<Button
-					className={values.isMember ? loginClasses : registerClasses}
-				>
+				<Button className={values.isMember ? loginClasses : registerClasses}>
 					{btnText}
 				</Button>
 			</form>
-			<div className={classes['form-controls']}>
-				<p className='text-centered'>
+			<div className={classes["form-controls"]}>
+				<p className="text-centered">
 					{values.isMember
 						? "Don't have an account?"
-						: 'Already have an Account?'}
+						: "Already have an Account?"}
 				</p>
-				<Button className={`${classes.btn} ${classes['btn--alt']}`} onClick={toggleMember}>
-					{values.isMember ? 'Create an Account' : 'Login'}
+				<Button
+					className={`${classes.btn} ${classes["btn--alt"]}`}
+					onClick={toggleMember}
+				>
+					{values.isMember ? "Create an Account" : "Login"}
 				</Button>
 			</div>
 		</Card>
