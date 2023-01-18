@@ -38,7 +38,6 @@ const AuthForm = () => {
 		e.preventDefault();
 		const { username, email, password } = values;
 		if (!email || !password) {
-			console.log("error");
 			displayAlert();
 			return;
 		}

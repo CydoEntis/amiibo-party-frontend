@@ -17,7 +17,6 @@ const DetailControls = () => {
 	} = useAppContext();
 
 	const handleAmiibo = (action) => {
-		console.log("clicked");
 		const { amiiboId } = selectedAmiibo;
 
 		const currentSelectedAmiibo = modifiedAmiibos.filter(
@@ -58,8 +57,7 @@ const DetailControls = () => {
 			}
 			updateAmiibo(amiibo);
 		}
-		console.log("Index from deatil control: ", index);
-		updateAmiiboList(index, amiibo, action);
+		updateAmiiboList(index);
 		hideAmiiboDetails();
 	};
 

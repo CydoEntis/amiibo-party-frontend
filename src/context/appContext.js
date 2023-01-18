@@ -171,8 +171,6 @@ const AppProvider = ({ children }) => {
 				currentUser,
 			);
 
-			console.log(data);
-
 			const { user, token } = data;
 
 			dispatch({
@@ -352,7 +350,6 @@ const AppProvider = ({ children }) => {
 	};
 
 	const updateAmiibo = async (amiiboData) => {
-		console.log(amiiboData);
 		try {
 			await axios.post(
 				process.env.REACT_APP_API_ENDPOINT + "amiibos/update",
@@ -365,28 +362,9 @@ const AppProvider = ({ children }) => {
 
 	const updateAmiiboList = (amiiboIndex, amiiboData, action) => {
 		const amiiboList = state.modifiedAmiibos;
-		console.log(amiiboList);
 		const updatedList = amiiboList.filter((amiibo, currIndex) => {
 			return currIndex !== amiiboIndex;
 		});
-
-		// console.log(index);
-		// console.log(amiiboData);
-		console.log(updatedList);
-		// for (let i = 0; i < updatedList.length; i++) {
-		// 	console.log("i: ", i);
-		// 	console.log("index: ", index);
-		// 	if (i === index) {
-		// 		updatedList[index] = amiiboData;
-		// 	}
-
-		// 	if (action === "uncollect" || action === "unwishlist") {
-		// 		console.log(updatedList[index]);
-		// 		updatedList.pop(updatedList[index]);
-		// 	}
-		// }
-
-		// console.log(updatedList);
 
 		dispatch({ type: UPDATE_AMIIBO_LIST, payload: { updatedList } });
 	};
