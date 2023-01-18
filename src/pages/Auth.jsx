@@ -12,7 +12,7 @@ const Auth = () => {
 			<main className={classes.main}>
 				<div className={classes.info}>
 					<h3>This is a demo app</h3>
-					<p>Please use this login info to test the application</p>
+					<h4>Demo account credentials.</h4>
 					<p>
 						Email: <strong>test@test.com</strong>
 					</p>
