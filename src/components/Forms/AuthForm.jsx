@@ -78,7 +78,17 @@ const AuthForm = () => {
 
 	return (
 		<Card className={classes["auth-card"]}>
-			<Logo className={classes.logo} />
+			{values.isMember && (
+				<div className={classes.info}>
+					<h3>Demo account credentials.</h3>
+					<p>
+						Email: <span>test@test.com</span>
+					</p>
+					<p>
+						Password:<span>Test123!</span>
+					</p>
+				</div>
+			)}
 			<form onSubmit={submitHandler}>
 				{showAlert && <Alert />}
 				<FormRow

@@ -10,16 +10,6 @@ const Auth = () => {
 		<>
 			<Navbar />
 			<main className={classes.main}>
-				<div className={classes.info}>
-					<h3>This is a demo app</h3>
-					<h4>Demo account credentials.</h4>
-					<p>
-						Email: <strong>test@test.com</strong>
-					</p>
-					<p>
-						Password:<strong> Test123!</strong>
-					</p>
-				</div>
 				<AuthForm />
 			</main>
 			<Footer />

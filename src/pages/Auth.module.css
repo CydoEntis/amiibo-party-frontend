@@ -1,29 +1,10 @@
 .main {
-	height: calc(100vh - 136px);
+	/* height: calc(100vh - 136px); */
+	height: 100vh;
 	overflow: hidden;
 	padding-top: 5rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-}
-
-.info {
-	max-width: 650px;
-	width: 95%;
-	background: #f6f6f6;
-	border: 1px solid RGBA(0, 0, 0, 0.2);
-	box-shadow: 0px 7px 0px RGBA(0, 0, 0, 0.2);
-	padding: 1rem;
-	border-radius: 0.4rem;
-}
-
-.info h3 {
-	text-align: center;
-	color: #555;
-}
-
-.info p {
-	color: #333;
-	padding: 0.25rem 0;
 }
