@@ -35,13 +35,13 @@ const Pagination = () => {
     if (currentPage !== 1) {
       prevPage();
     }
-	window.scrollTo(0, 0)
+	
   };
 
   const goToNextPage = () => {
     if (currentPage !== numOfPages) {
       nextPage();
-	  window.scrollTo(0, 0)
+	  
     }
   };
 
