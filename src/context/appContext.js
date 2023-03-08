@@ -50,7 +50,7 @@ const initialState = {
 	currentPage: 1,
 	maxPages: 4,
 	pageNumbers: [],
-	limit: 25,
+	limit: 20,
 	showDetails: false,
 	selectedAmiibo: {},
 	activeCollection: "all",
@@ -281,6 +281,7 @@ const AppProvider = ({ children }) => {
 	};
 
 	const goToPage = (newPage) => {
+		window.scrollTo(0, 0);
 		dispatch({
 			type: GO_TO_PAGE,
 			payload: {
