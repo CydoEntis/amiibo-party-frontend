@@ -94,3 +94,14 @@
     display: flex;
   }
 }
+
+@media only screen and (min-width: 1080px) {
+  .form--button {
+    padding: 1rem;
+    font-size: 1rem;;
+  }
+
+  .form--container h3 {
+    font-size: 1.25rem;
+  }
+}
